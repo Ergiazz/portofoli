@@ -1,0 +1,59 @@
+/* Mengatur ukuran scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+}
+
+/* Mengatur tampilan track (jalur) scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* warna background track */
+}
+
+/* Mengatur tampilan thumb (handle) scrollbar */
+::-webkit-scrollbar-thumb {
+    background: skyblue; /* warna thumb */
+    border-radius: 6px; /* membuat sudut melengkung */
+}
+
+*{
+    font-family: "Poppins", system-ui;
+}
+body{
+    height: 200vh;
+    background-color: #F5F5F5;
+}
+
+
+
+
+@keyframes munculkiri{
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes munculkanan{
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}@keyframes munculatas{
+    0%{
+        transform: translatey(-50px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
